@@ -9,7 +9,7 @@
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="My online portfolio that illustrates skills acquired while working through various project requirements.">
+	<meta name="description" content="Customer form file.">
 	<meta name="author" content="Ryan M Parks">
 	<link rel="icon" href="favicon.ico">
 
@@ -73,29 +73,6 @@
 							<% response.sendRedirect("/lis4368/index.jsp"); %>
 						</c:otherwise>
 					</c:choose>
-					
-					<!--
-							 https://www.tutorialspoint.com/servlets/servlets-first-example.htm								
-							 http://stackoverflow.com/questions/11731377/servlet-returns-http-status-404-the-requested-resource-servlet-is-not-availa								
-							 Form action submission to URL with leading slash:
-							 <form action="/servlet">
-							 Leading slash / makes URL relative to domain, that is, form will submit to:
-							 http://localhost:9999/servlet
-
-							 Form action submission to URL w/o leading slash:								
-							 <form action="servlet">
-							 Makes URL relative to current directory of current URL. Form will submit to:
-							 http://localhost:9999/contextname/somedirectory/servlet								
-
-							 Best solution: make URL domain-relative (won't need to fix URLs when JSP/HTML files moved into another folder)
-							 <form action="${pageContext.request.contextPath}/servlet">
-
-							 Makes URL context relative. Form will submit to:								
-							 <form action="/contextname/servlet">
-							 Will *always* submit to correct URL!
-
-							 Use this servlet for testing: ShowParameters								
-					-->
 					
 					<p><a href="customerAdmin?action=display_customers">Display Customers</a></p>
 

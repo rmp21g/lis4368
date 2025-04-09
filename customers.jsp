@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="My online portfolio that illustrates skills acquired while working through various project requirements.">
+		<meta name="description" content="Customers file.">
 		<meta name="author" content="Ryan M Parks">
 		<link rel="icon" href="favicon.ico">
 
@@ -58,18 +58,6 @@
 								<th class="text-center">&nbsp;</th>
 							</tr>
 						</thead>
-
-							<%
-							/*
-								 Note: "items" contains an ArrayList (or an Object array) to loop over: here, an ArrayList (see CustomerServlet.java and CustomerDB.java)
-								 "var" is simply a user-defined variable used to access the current element, while looping through each iteration of "users" ArrayList, using forEach
-								 Essentially, customerform.jsp calls CustomerServlet, using the string "display_customers."
-								 CustomerServlet then calls CustomerDB.selectCustomers(), and stores the returned ArrayList in a variable called "users."
-								 This ArrayList "users," is then passed as a variable from CustomerServlet to customers.jsp
-								 See action.equals("display_customers") in CustomerServlet.java file.
-								 Then, we just loop through each of the elements and their properties (e.g., fname, lname, street, etc.)
-							 */
-							%>
 							
 							<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 							<c:forEach var="user" items="${users}">
